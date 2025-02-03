@@ -1,0 +1,89 @@
+
+#projeto {
+    max-width: 1200px; /* Define a largura máxima da seção */
+    margin: 50px auto; /* Centraliza horizontalmente e adiciona espaçamento vertical */
+    padding: 20px; 
+    text-align: center; /* Centraliza o texto */
+}
+
+#projeto h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#projeto p {
+    font-size: 18px; 
+    color: #666; 
+    margin-bottom: 40px;
+}
+
+/* Layout da grade de projetos */
+.grade-projetos {
+    display: flex; 
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas pequenas */
+}
+
+/* Estilos para cada card */
+.grade-projetos div {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animacao */
+}
+
+.grade-projetos div:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para a imagem dos projetos */
+.grade-projetos img {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 15px;
+}
+
+/* Estilo para o título e descrição dos projetos */
+.grade-projetos h3 {
+    font-size: 2rem;
+    margin-bottom: 10px; 
+}
+
+.grade-projetos p {
+    font-size: 16px; 
+    color: #737373; 
+    margin-bottom: 20px;
+}
+
+/* Estilo para o link */
+.grade-projetos a {
+    display: inline-block; /* Deixa o link como bloco para poder aplicar padding */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    background-color: #737373; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animação suave na mudança de cor */
+}
+
+.grade-projetos a:hover {
+    background-color: #696969;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .grade-projetos {
+        flex-direction: column; /* Empilha os cards verticalmente em telas pequenas */
+    }
+
+    .grade-projetos div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+/* Sobre */
+#sobre {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#sobre h2 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que o conteúdo seja responsivo */
+}
+
+.texto-sobre {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.texto-sobre h3 {
+    font-size: 24px;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.texto-sobre p, .texto-sobre ul {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.texto-sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.texto-sobre ul li {
+    margin-bottom: 10px;
+}
+
+.img-sobre {
+    flex: 1;
+    max-width: 500px; /* Largura máxima da imagem */
+}
+
+.img-sobre img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column; /* Empilha o texto e a imagem*/
+    }
+
+    .texto-sobre {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-sobre {
+        max-width: 100%; /* A imagem ocupa toda a largura */
+    }
+}

@@ -1,0 +1,37 @@
+#home{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#home h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 2 2 2 rgba(0, 0, 0, 0.4);
+}
+
+.botao{
+    width: 120px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color:#737373;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover{
+    background-color: #696969;
+}

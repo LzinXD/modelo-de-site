@@ -1,0 +1,67 @@
+/* Estilo da seção de contato */
+#contato {
+    padding: 50px 20px; /* Espaçamento interno da seção */
+}
+
+#contato form {
+    background-image: url('../images/testeFormulario.avif');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover; 
+    background-position: center; 
+    padding: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 500px;
+    margin: 0 auto; /* Centraliza o formulário na página */
+    color: white;
+}
+
+/* Estilos dos campos do formulário */
+#contato form label {
+    display: block;
+    margin-bottom: 10px; /* Espaço abaixo dos rótulos */
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+#contato form input, #contato form textarea {
+    width: 100%;
+    padding: 10px; /* Espaçamento interno dos campos */
+    margin-bottom: 20px; /* Espaço abaixo dos campos */
+    border: 1px solid #696969; /* Borda dos campos */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* botão */
+#contato form button {
+    background-color: #737373;
+    color: white; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+#contato form button:hover {
+    background-color: #696969;
+}
+
+/* janela do formulario no Js*/
+.desativa {
+    display: none;/* Ocultar o formulário */
+}
+
+.ativa {
+    display: block;/* Mostrar o formulário*/
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contato form {
+        padding: 20px;
+    }
+}

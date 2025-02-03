@@ -1,0 +1,48 @@
+
+#cabecalho {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#cabecalho nav {
+    display: flex; 
+    justify-content: space-between; /* Espaço entre o título e o menu */
+    align-items: center; /* Centraliza verticalmente */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Espaçamento nas laterais */
+}
+
+.logo {
+    font-size: 1.5rem; /* Tamanho do título */
+    font-family: "Libre Baskerville", serif; /* fonte */
+    margin: 0; /* Remove margens extras */
+    color: #f2f2f2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cabecalho ul {
+    list-style: none;
+    display: flex; /* Exibe lado a lado */
+}
+
+#cabecalho ul li {
+    margin-left: 20px;
+}
+
+#cabecalho ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; 
+    text-transform: uppercase;
+    transition: 0.3s; 
+}
+
+#cabecalho ul li a:hover {
+    color: #ffb400;
+}
